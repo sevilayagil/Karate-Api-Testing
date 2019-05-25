@@ -3,7 +3,7 @@ Karate ile Web Servis Testi Örneği
 
 This sample project includes api testing with Karate
 
-# Getting Started (Gereksinimler) :heavy_check_mark:
+# Getting Started (Gereksinimler) :ghost:
 Karate requires Java 8 (at least version 1.8.0_112 or greater) (Java jdk 1.8 sürümü ve üzeri) 
 https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html 
 

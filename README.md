@@ -9,11 +9,12 @@ https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.
 Intellij
 https://www.jetbrains.com/idea/download/#section=windows (Maven, Gradle or Eclipse to be installed.)
 Cucumber Plugin
-File>settings>plugins> cucumber for java
+cucumber for java
 Karate Github
 https://github.com/intuit/karate
 Dummy Demo site
 http://dummy.restapiexample.com/
+
 # Running in IntelliJ       
 If you use IntelliJ IDEA, Cucumber support is built-in, and you can even select a single Scenario within a Feature to run at a time. 
 If you are using the free Community Edition, you can easily install the "Gherkin" and "Cucumber for Java" plugins.

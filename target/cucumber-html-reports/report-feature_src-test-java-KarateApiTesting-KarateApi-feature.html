@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: src/test/java/KarateApiTesting/KarateApi.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Hardwareandro.com</td>
+            <td>24 May 2019, 21:52</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">src/test/java/KarateApiTesting/KarateApi.feature</td>
+          <td      class="passed"    >22</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">22</td>
+
+          <td  class="passed"    >3</td>
+          <td >0</td>
+          <td class="total">3</td>
+
+          <td class="duration" data-value="5181147639">5.181</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">src/test/java/KarateApiTesting/KarateApi.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Test User API</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.219</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url <span class="argument">apiURL</span></span>
+  
+  <span class="lead-duration duration">1.183</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def <span class="argument">randomnumber</span> = <span class="argument">Math.random()</span></span>
+  
+  <span class="lead-duration duration">0.013</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def <span class="argument">name</span> = <span class="argument">'hardwareandro.com-'+randomnumber</span></span>
+  
+  <span class="lead-duration duration">0.022</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">2.044</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get all employee data</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-3" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url <span class="argument">apiURL</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path <span class="argument">'employees'</span></span>
+  
+  <span class="lead-duration duration">0.015</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method <span class="argument">GET</span></span>
+  
+  <span class="lead-duration duration">2.027</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>21:51:55.641 DEBUG - 
+1 &gt; GET http://dummy.restapiexample.com/api/v1/employees
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: dummy.restapiexample.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)
+
+21:51:57.131 DEBUG - 
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+1 &lt; Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: text/html; charset=UTF-8
+1 &lt; Date: Fri, 24 May 2019 18:53:49 GMT
+1 &lt; Expires: Thu, 19 Nov 1981 08:52:00 GMT
+1 &lt; Pragma: no-cache
+1 &lt; Referrer-Policy: 
+1 &lt; Server: nginx/1.14.1
+1 &lt; Set-Cookie: PHPSESSID=7ea4gfr7r1fr9klvum3uu3r0t6; path=/
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Proxy-Cache: MISS
+1 &lt; X-Server-Cache: true
+[{&quot;id&quot;:&quot;10370&quot;,&quot;employee_name&quot;:&quot;muehehe&quot;,&quot;employee_salary&quot;:&quot;45&quot;,&quot;employee_age&quot;:&quot;21&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10373&quot;,&quot;employee_name&quot;:&quot;kapit jck&quot;,&quot;employee_salary&quot;:&quot;82132183&quot;,&quot;employee_age&quot;:&quot;69&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10374&quot;,&quot;employee_name&quot;:&quot;order43577&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10375&quot;,&quot;employee_name&quot;:&quot;48186&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10378&quot;,&quot;employee_name&quot;:&quot;item6381&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10380&quot;,&quot;employee_name&quot;:&quot;RomanAT_name_lFidOMwtX_0153&quot;,&quot;employee_salary&quot;:&quot;2300&quot;,&quot;employee_age&quot;:&quot;33&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10381&quot;,&quot;employee_name&quot;:&quot;SlavaAT_name_wzjMWlUxN_0760&quot;,&quot;employee_salary&quot;:&quot;1000&quot;,&quot;employee_age&quot;:&quot;22&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10383&quot;,&quot;employee_name&quot;:&quot;Baron3&quot;,&quot;employee_salary&quot;:&quot;20000&quot;,&quot;employee_age&quot;:&quot;100&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10384&quot;,&quot;employee_name&quot;:&quot;39966&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10385&quot;,&quot;employee_name&quot;:&quot;28137&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10386&quot;,&quot;employee_name&quot;:&quot;kapit ngen&quot;,&quot;employee_salary&quot;:&quot;213123&quot;,&quot;employee_age&quot;:&quot;52&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10387&quot;,&quot;employee_name&quot;:&quot;test&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10388&quot;,&quot;employee_name&quot;:&quot;haihaiahaia&quot;,&quot;employee_salary&quot;:&quot;46&quot;,&quot;employee_age&quot;:&quot;12&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10389&quot;,&quot;employee_name&quot;:&quot;item93692&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10390&quot;,&quot;employee_name&quot;:&quot;kapit elek&quot;,&quot;employee_salary&quot;:&quot;32121321&quot;,&quot;employee_age&quot;:&quot;12&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10391&quot;,&quot;employee_name&quot;:&quot;44558&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10393&quot;,&quot;employee_name&quot;:&quot;item65254&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10394&quot;,&quot;employee_name&quot;:&quot;83193&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10395&quot;,&quot;employee_name&quot;:&quot;item4476&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10396&quot;,&quot;employee_name&quot;:&quot;68953&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10397&quot;,&quot;employee_name&quot;:&quot;84951&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10398&quot;,&quot;employee_name&quot;:&quot;62788&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10399&quot;,&quot;employee_name&quot;:&quot;item25042&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10400&quot;,&quot;employee_name&quot;:&quot;item44604&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10402&quot;,&quot;employee_name&quot;:&quot;Baron4&quot;,&quot;employee_salary&quot;:&quot;20000&quot;,&quot;employee_age&quot;:&quot;100&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10403&quot;,&quot;employee_name&quot;:&quot;40465&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10404&quot;,&quot;employee_name&quot;:&quot;item23289&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10405&quot;,&quot;employee_name&quot;:&quot;Michael Juan&quot;,&quot;employee_salary&quot;:&quot;44&quot;,&quot;employee_age&quot;:&quot;444&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10406&quot;,&quot;employee_name&quot;:&quot;81705&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10407&quot;,&quot;employee_name&quot;:&quot;item13973&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10408&quot;,&quot;employee_name&quot;:&quot;item37316&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10409&quot;,&quot;employee_name&quot;:&quot;Baron5&quot;,&quot;employee_salary&quot;:&quot;20000&quot;,&quot;employee_age&quot;:&quot;100&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10415&quot;,&quot;employee_name&quot;:&quot;93626&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10416&quot;,&quot;employee_name&quot;:&quot;Hahhaha&quot;,&quot;employee_salary&quot;:&quot;868&quot;,&quot;employee_age&quot;:&quot;68&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10418&quot;,&quot;employee_name&quot;:&quot;73410&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10419&quot;,&quot;employee_name&quot;:&quot;44141&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10420&quot;,&quot;employee_name&quot;:&quot;57808&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10421&quot;,&quot;employee_name&quot;:&quot;54464&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10422&quot;,&quot;employee_name&quot;:&quot;Amit Negi111&quot;,&quot;employee_salary&quot;:&quot;123456&quot;,&quot;employee_age&quot;:&quot;44&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10424&quot;,&quot;employee_name&quot;:&quot;item84982&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10425&quot;,&quot;employee_name&quot;:&quot;order19306&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10426&quot;,&quot;employee_name&quot;:&quot;76610&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10427&quot;,&quot;employee_name&quot;:&quot;item76572&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10428&quot;,&quot;employee_name&quot;:&quot;order44808&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10429&quot;,&quot;employee_name&quot;:&quot;47691&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10430&quot;,&quot;employee_name&quot;:&quot;item29599&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10431&quot;,&quot;employee_name&quot;:&quot;order46640&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10432&quot;,&quot;employee_name&quot;:&quot;46218&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10433&quot;,&quot;employee_name&quot;:&quot;item90543&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10434&quot;,&quot;employee_name&quot;:&quot;item87563&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10435&quot;,&quot;employee_name&quot;:&quot;order43146&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10437&quot;,&quot;employee_name&quot;:&quot;Baron6&quot;,&quot;employee_salary&quot;:&quot;20000&quot;,&quot;employee_age&quot;:&quot;100&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10438&quot;,&quot;employee_name&quot;:&quot;CHUPALOOOOO&quot;,&quot;employee_salary&quot;:&quot;11111&quot;,&quot;employee_age&quot;:&quot;11&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10439&quot;,&quot;employee_name&quot;:&quot;67475&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10440&quot;,&quot;employee_name&quot;:&quot;item36467&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10442&quot;,&quot;employee_name&quot;:&quot;32378&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10443&quot;,&quot;employee_name&quot;:&quot;Baron7&quot;,&quot;employee_salary&quot;:&quot;20000&quot;,&quot;employee_age&quot;:&quot;100&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10444&quot;,&quot;employee_name&quot;:&quot;97404&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10445&quot;,&quot;employee_name&quot;:&quot;9449&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10446&quot;,&quot;employee_name&quot;:&quot;item94541&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10447&quot;,&quot;employee_name&quot;:&quot;order49017&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10448&quot;,&quot;employee_name&quot;:&quot;item80891&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10449&quot;,&quot;employee_name&quot;:&quot;order35755&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10450&quot;,&quot;employee_name&quot;:&quot;70166&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10451&quot;,&quot;employee_name&quot;:&quot;item52567&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10452&quot;,&quot;employee_name&quot;:&quot;item92148&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10453&quot;,&quot;employee_name&quot;:&quot;order53049&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10454&quot;,&quot;employee_name&quot;:&quot;item55324&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10455&quot;,&quot;employee_name&quot;:&quot;WELLTEST12&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10456&quot;,&quot;employee_name&quot;:&quot;eeeeeeeee&quot;,&quot;employee_salary&quot;:&quot;0&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10457&quot;,&quot;employee_name&quot;:&quot;WELLTEST14&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10460&quot;,&quot;employee_name&quot;:&quot;WELLTEST49&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10462&quot;,&quot;employee_name&quot;:&quot;WELTEST51&quot;,&quot;employee_salary&quot;:&quot;1215&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10468&quot;,&quot;employee_name&quot;:&quot;haidar&quot;,&quot;employee_salary&quot;:&quot;23&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10469&quot;,&quot;employee_name&quot;:&quot;String 1&quot;,&quot;employee_salary&quot;:&quot;0&quot;,&quot;employee_age&quot;:&quot;0&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10471&quot;,&quot;employee_name&quot;:&quot;String 2&quot;,&quot;employee_salary&quot;:&quot;0&quot;,&quot;employee_age&quot;:&quot;0&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10472&quot;,&quot;employee_name&quot;:&quot;nagarjuna1&quot;,&quot;employee_salary&quot;:&quot;855000&quot;,&quot;employee_age&quot;:&quot;31&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10473&quot;,&quot;employee_name&quot;:&quot;testssss&quot;,&quot;employee_salary&quot;:&quot;123&quot;,&quot;employee_age&quot;:&quot;23&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10478&quot;,&quot;employee_name&quot;:&quot;Striwwng 1&quot;,&quot;employee_salary&quot;:&quot;0&quot;,&quot;employee_age&quot;:&quot;0&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10482&quot;,&quot;employee_name&quot;:&quot;ruben&quot;,&quot;employee_salary&quot;:&quot;100&quot;,&quot;employee_age&quot;:&quot;21&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10485&quot;,&quot;employee_name&quot;:&quot;Stri444wwng 1&quot;,&quot;employee_salary&quot;:&quot;0&quot;,&quot;employee_age&quot;:&quot;0&quot;,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:&quot;10486&quot;,&quot;employee_name&quot;:&quot;CHORO ALCANTARINO&quot;,&quot;employee_salary&quot;:&quot;900000&quot;,&quot;employee_age&quot;:&quot;12&quot;,&quot;profile_image&quot;:&quot;&quot;}]
+
+21:51:57.137 DEBUG - response time in milliseconds: 1914
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status <span class="argument">200</span></span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.110</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-6">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-6" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url <span class="argument">apiURL</span></span>
+  
+  <span class="lead-duration duration">0.060</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def <span class="argument">randomnumber</span> = <span class="argument">Math.random()</span></span>
+  
+  <span class="lead-duration duration">0.016</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def <span class="argument">name</span> = <span class="argument">'hardwareandro.com-'+randomnumber</span></span>
+  
+  <span class="lead-duration duration">0.032</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.601</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Create new record in database</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-8" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url <span class="argument">apiURL</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path <span class="argument">'create'</span></span>
+  
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request <span class="argument">{&quot;name&quot;:&quot;#(name)&quot;,&quot;salary&quot;:&quot;123&quot;,&quot;age&quot;:&quot;23&quot;}</span></span>
+  
+  <span class="lead-duration duration">0.034</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method <span class="argument">post</span></span>
+  
+  <span class="lead-duration duration">0.554</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>21:51:57.407 DEBUG - 
+1 &gt; POST http://dummy.restapiexample.com/api/v1/create
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 74
+1 &gt; Content-Type: application/json
+1 &gt; Host: dummy.restapiexample.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)
+{&quot;name&quot;:&quot;hardwareandro.com-0.38461164745685505&quot;,&quot;salary&quot;:&quot;123&quot;,&quot;age&quot;:&quot;23&quot;}
+
+21:51:57.954 DEBUG - 
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+1 &lt; Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: text/html; charset=UTF-8
+1 &lt; Date: Fri, 24 May 2019 18:53:50 GMT
+1 &lt; Expires: Thu, 19 Nov 1981 08:52:00 GMT
+1 &lt; Pragma: no-cache
+1 &lt; Referrer-Policy: 
+1 &lt; Server: nginx/1.14.1
+1 &lt; Set-Cookie: PHPSESSID=ndor8eivt9bphdt32q8p54sck7; path=/
+1 &lt; Vary: Accept-Encoding
+{&quot;name&quot;:&quot;hardwareandro.com-0.38461164745685505&quot;,&quot;salary&quot;:&quot;123&quot;,&quot;age&quot;:&quot;23&quot;,&quot;id&quot;:&quot;10487&quot;}
+
+21:51:57.955 DEBUG - response time in milliseconds: 552
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status <span class="argument">200</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.109</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url <span class="argument">apiURL</span></span>
+  
+  <span class="lead-duration duration">0.082</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def <span class="argument">randomnumber</span> = <span class="argument">Math.random()</span></span>
+  
+  <span class="lead-duration duration">0.013</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def <span class="argument">name</span> = <span class="argument">'hardwareandro.com-'+randomnumber</span></span>
+  
+  <span class="lead-duration duration">0.013</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.095</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get a single employee data</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url <span class="argument">apiURL</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path <span class="argument">'employee/8386'</span></span>
+  
+  <span class="lead-duration duration">0.025</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method <span class="argument">get</span></span>
+  
+  <span class="lead-duration duration">1.070</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>21:51:58.105 DEBUG - 
+1 &gt; GET http://dummy.restapiexample.com/api/v1/employee/8386
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: dummy.restapiexample.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_111)
+
+21:51:59.168 DEBUG - 
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+1 &lt; Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 5
+1 &lt; Content-Type: text/html; charset=UTF-8
+1 &lt; Date: Fri, 24 May 2019 18:53:51 GMT
+1 &lt; Expires: Thu, 19 Nov 1981 08:52:00 GMT
+1 &lt; Pragma: no-cache
+1 &lt; Referrer-Policy: 
+1 &lt; Server: nginx/1.14.1
+1 &lt; Set-Cookie: PHPSESSID=5n1ncv0c0tm2jaokarr6f5lau0; path=/
+1 &lt; X-Proxy-Cache: MISS
+1 &lt; X-Server-Cache: true
+false
+
+21:51:59.169 DEBUG - response time in milliseconds: 1069
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status <span class="argument">200</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

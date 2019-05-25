@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="Test User API" skipped="0" tests="3" time="5.181147">
+<testcase classname="src.test.java.KarateApiTesting.KarateApi" name="Get all employee data" time="3.264251">
+<system-out><![CDATA[* url apiURL................................................................passed
+* def randomnumber = Math.random()..........................................passed
+* def name = 'hardwareandro.com-'+randomnumber..............................passed
+Given url apiURL............................................................passed
+And path 'employees'........................................................passed
+When method GET.............................................................passed
+Then status 200.............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="src.test.java.KarateApiTesting.KarateApi" name="Create new record in database" time="0.711522">
+<system-out><![CDATA[* url apiURL................................................................passed
+* def randomnumber = Math.random()..........................................passed
+* def name = 'hardwareandro.com-'+randomnumber..............................passed
+Given url apiURL............................................................passed
+And path 'create'...........................................................passed
+And request {"name":"#(name)","salary":"123","age":"23"}....................passed
+When method post............................................................passed
+Then status 200.............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="src.test.java.KarateApiTesting.KarateApi" name="Get a single employee data" time="1.205374">
+<system-out><![CDATA[* url apiURL................................................................passed
+* def randomnumber = Math.random()..........................................passed
+* def name = 'hardwareandro.com-'+randomnumber..............................passed
+Given url apiURL............................................................passed
+And path 'employee/8386'....................................................passed
+When method get.............................................................passed
+Then status 200.............................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

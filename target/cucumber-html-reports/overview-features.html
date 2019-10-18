@@ -51,7 +51,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                22,
+                14,
                 0,
                 0,
                 0,
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 22) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 14) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -107,7 +107,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                3,
+                2,
                 0
             ],
             backgroundColor: [
@@ -144,7 +144,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 3) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 2) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -232,7 +232,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Hardwareandro.com</td>
-            <td>24 May 2019, 21:52</td>
+            <td>18 Oct 2019, 23:53</td>
     </tr>
   </tbody>
 </table>
@@ -278,7 +278,7 @@ $(document).ready(function() {
           </div>
 
           <!-- Left and right controls -->
-          <a class="left carousel-control" href="#featureChartCarousel" role="button" data-slide="prev">
+          <a class="left carousel-control" href="#featureChartCarousel" role="button" data-slide="prev"></span>
             <i class="fa fa-chevron-left" aria-hidden="true"></i>
             <span class="sr-only">Previous</span>
           </a>
@@ -328,39 +328,39 @@ $(document).ready(function() {
   <tbody>
           <tr>
         <td class="tagname"><a href="report-feature_src-test-java-KarateApiTesting-KarateApi-feature.html">src/test/java/KarateApiTesting/KarateApi.feature</a></td>
+        
+        <td      class="passed"    >14</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">14</td>
 
-        <td      class="passed"    >22</td>
+        <td  class="passed"    >2</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">22</td>
+        <td class="total">2</td>
 
-        <td  class="passed"    >3</td>
-        <td >0</td>
-        <td class="total">3</td>
-
-        <td class="duration" data-value="5181147639">5.181</td>
+        <td class="duration" data-value="1833017708">1s 833ms</td>
         <td class="passed">Passed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
-      <td></td>
-      <td>22</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>22</td>
-
-      <td>3</td>
-      <td>0</td>
-      <td>3</td>
-
-      <td class="duration">5.181</td>
       <td>1</td>
+            <td>14</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>14</td>
+
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+
+      <td class="duration">1s 833ms</td>
+      <td></td>
     </tr>
     <tr>
       <td></td>

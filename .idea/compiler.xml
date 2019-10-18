@@ -15,7 +15,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Demo" options="" />
+      <module name="Demo" options="-Werror" />
     </option>
   </component>
 </project>

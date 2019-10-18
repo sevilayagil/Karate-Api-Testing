@@ -1,0 +1,75 @@
+23:53:20.943 request:
+1 > GET http://dummy.restapiexample.com/api/v1/employees
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: dummy.restapiexample.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+23:53:21.603 response time in milliseconds: 657.45
+1 < 200
+1 < Accept-Ranges: bytes
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+1 < Age: 0
+1 < Cache-Control: no-store, no-cache, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: text/html; charset=UTF-8
+1 < Date: Fri, 18 Oct 2019 20:53:21 GMT
+1 < Expires: Thu, 19 Nov 1981 08:52:00 GMT
+1 < PageSpeed: off
+1 < Pragma: no-cache
+1 < Referrer-Policy: 
+1 < Response: 200
+1 < Server: nginx/1.16.0
+1 < Set-Cookie: [PHPSESSID=e609c20063dd86d163105921f532578c; path=/, ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Fri, 18 Oct 2019 21:23:21 UTC, ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Fri, 18 Oct 2019 22:53:21 UTC, ezoab_133674=mod19; Path=/; Domain=restapiexample.com; Expires=Fri, 18 Oct 2019 22:53:21 UTC, active_template::133674=pub_site.1571432001; Path=/; Domain=restapiexample.com; Expires=Sun, 20 Oct 2019 20:53:21 UTC, ezCMPCCS=true; Path=/; Domain=restapiexample.com; Expires=Sun, 18 Oct 2020 20:53:21 GMT]
+1 < Vary: User-Agent,Accept-Encoding,X-APP-JSON
+1 < Via: 1.1 varnish (Varnish/6.0)
+1 < X-Ezoic-Cdn: Miss
+1 < X-Middleton-Response: 200
+1 < X-Sol: pub_site
+1 < X-VCache: Miss
+1 < X-Varnish: 4921225
+1 < X-shard: 100225214
+[]
+
+23:53:21.644 request:
+1 > GET http://dummy.restapiexample.com/api/v1/employee/8386
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: dummy.restapiexample.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+23:53:22.566 response time in milliseconds: 920.51
+1 < 200
+1 < Accept-Ranges: bytes
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+1 < Age: 0
+1 < Cache-Control: no-store, no-cache, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: text/html; charset=UTF-8
+1 < Date: Fri, 18 Oct 2019 20:53:22 GMT
+1 < Display: pub_site_to_orig_sol
+1 < Expires: Thu, 19 Nov 1981 08:52:00 GMT
+1 < PageSpeed: off
+1 < Pragma: no-cache
+1 < Referrer-Policy: 
+1 < Response: 200
+1 < Server: nginx/1.16.0
+1 < Set-Cookie: [PHPSESSID=b6caa8023328de54bb3ecaa859b38c82; path=/, ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Fri, 18 Oct 2019 21:23:21 UTC, ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Fri, 18 Oct 2019 22:53:21 UTC, ezoab_133674=mod20; Path=/; Domain=restapiexample.com; Expires=Fri, 18 Oct 2019 22:53:21 UTC, active_template::133674=pub_site.1571432001; Path=/; Domain=restapiexample.com; Expires=Sun, 20 Oct 2019 20:53:21 UTC, lp_133674=http://dummy.restapiexample.com/api/v1/employee/8386; Path=/; Domain=restapiexample.com; Expires=Fri, 18 Oct 2019 22:53:22 UTC, ezovuuidtime_133674=1571432002; Path=/; Domain=restapiexample.com; Expires=Sun, 20 Oct 2019 20:53:22 UTC, ezovuuid_133674=2e158548-c98f-4c26-573a-22dc0f0071e0; Path=/; Domain=restapiexample.com; Expires=Fri, 18 Oct 2019 21:23:22 UTC, ezopvc_133674=1; Path=/; Domain=restapiexample.com; Expires=Fri, 18 Oct 2019 21:23:22 UTC, ezCMPCCS=true; Path=/; Domain=restapiexample.com; Expires=Sun, 18 Oct 2020 20:53:22 GMT]
+1 < Vary: User-Agent,Accept-Encoding,X-APP-JSON
+1 < Via: 1.1 varnish (Varnish/6.0)
+1 < X-Ezoic-Cdn: Miss
+1 < X-Middleton-Display: pub_site_to_orig_sol
+1 < X-Middleton-Response: 200
+1 < X-Sol: pub_site
+1 < X-VCache: Miss
+1 < X-Varnish: 330513971
+1 < X-shard: 100224194
+false<script type='text/javascript' style='display:none;' async>
+__ez.queue.addFile('edmonton.php', '/detroitchicago/edmonton.webp?a=a&cb=3&shcb=32', true, [], true, false, false, false);
+__ez.queue.addFile('jellyfish.php', '/porpoiseant/jellyfish.webp?a=a&cb=3&shcb=32', false, [], true, false, false, false);
+</script>
+
+<script>var _audins_dom="restapiexample_com",_audins_did=133674;__ez.queue.addDelayFunc("audins.js","__ez.script.add", "//go.ezoic.net/detroitchicago/audins.js?cb=187-3");</script><noscript><div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.restapiexample_com,DomainId.133674" border="0" height="1" width="1" alt="Quantcast"/></div></noscript><noscript><img src="https://sb.scorecardresearch.com/p?c1=2&c2=20015427&cv=2.0&cj=1"/></noscript>
+

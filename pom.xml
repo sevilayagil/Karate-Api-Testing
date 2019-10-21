@@ -6,17 +6,19 @@
     <groupId>KarateDemo</groupId>
     <artifactId>Demo</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <maven.compiler.version>3.6.0</maven.compiler.version>
-        <gatling.plugin.version>2.2.4</gatling.plugin.version>
+        <karate.version>0.9.4</karate.version>
+        <gatling.plugin.version>3.0.2</gatling.plugin.version>
     </properties>
     <dependencies>
         <dependency>
             <groupId>com.intuit.karate</groupId>
             <artifactId>karate-gatling</artifactId>
-            <version>0.9.2</version>
+            <version>${karate.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -38,7 +40,7 @@
         <dependency>
             <groupId>com.intuit.karate</groupId>
             <artifactId>karate-apache</artifactId>
-            <version>0.9.2</version>
+            <version>${karate.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -50,7 +52,7 @@
         <dependency>
             <groupId>com.intuit.karate</groupId>
             <artifactId>karate-core</artifactId>
-            <version>0.9.0</version>
+            <version>${karate.version}</version>
         </dependency>
         <dependency>
             <groupId>net.masterthought</groupId>
@@ -105,35 +107,34 @@
             </testResource>
         </testResources>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.0</version>
-                <configuration>
-                    <encoding>UTF-8</encoding>
-                    <compilerArgument>-Werror</compilerArgument>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.10</version>
-                <configuration>
-                    <includes>
-                        <include>**/*.java</include>
-                    </includes>
-                    <argLine>-Dfile.encoding=UTF-8</argLine>
-                </configuration>
-            </plugin>
+
             <plugin>
                 <groupId>io.gatling</groupId>
                 <artifactId>gatling-maven-plugin</artifactId>
-                <version>3.0.1</version>
+                <version>${gatling.plugin.version}</version>
                 <configuration>
-                    <simulationsFolder>src/test/java/scala</simulationsFolder>
+                    <simulationsFolder>src/test/java</simulationsFolder>
                     <includes>
-                        <include>APISimulation</include>
+                        <include>scala.APISimulation</include>
                     </includes>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M3</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.version}</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <compilerArgument>-Werror</compilerArgument>
                 </configuration>
             </plugin>
         </plugins>

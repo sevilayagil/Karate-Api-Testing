@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -9,8 +9,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="scala-sdk-2.10.0" level="application" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.intuit.karate:karate-gatling:0.9.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.intuit.karate:karate-gatling:0.9.4" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.gatling.highcharts:gatling-charts-highcharts:3.0.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.scala-lang:scala-library:2.12.8" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.gatling:gatling-charts:3.0.2" level="project" />
@@ -82,12 +81,6 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: ch.qos.logback:logback-classic:1.2.3" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: ch.qos.logback:logback-core:1.2.3" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.openjfx:javafx-controls:12-ea+9" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.openjfx:javafx-controls:mac:12-ea+9" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.openjfx:javafx-graphics:12-ea+9" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.openjfx:javafx-graphics:mac:12-ea+9" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.openjfx:javafx-base:12-ea+9" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: org.openjfx:javafx-base:mac:12-ea+9" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.5" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.h2database:h2:1.4.196" level="project" />
     <orderEntry type="library" name="Maven: com.github.java-json-tools:json-schema-validator:2.2.8" level="project" />
@@ -103,7 +96,7 @@
     <orderEntry type="library" name="Maven: com.googlecode.libphonenumber:libphonenumber:8.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:3.0.1" level="project" />
     <orderEntry type="library" name="Maven: net.sf.jopt-simple:jopt-simple:5.0.3" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.intuit.karate:karate-apache:0.9.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.intuit.karate:karate-apache:0.9.4" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.apache.httpcomponents:httpclient:4.5.5" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.apache.httpcomponents:httpcore:4.4.9" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: commons-codec:commons-codec:1.10" level="project" />
@@ -118,13 +111,13 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.testng:testng:6.9.10" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.beust:jcommander:1.48" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.beanshell:bsh:2.0b4" level="project" />
-    <orderEntry type="library" name="Maven: com.intuit.karate:karate-core:0.9.0" level="project" />
+    <orderEntry type="library" name="Maven: com.intuit.karate:karate-core:0.9.4" level="project" />
     <orderEntry type="library" name="Maven: com.jayway.jsonpath:json-path:2.1.0" level="project" />
     <orderEntry type="library" name="Maven: net.minidev:json-smart:2.2" level="project" />
     <orderEntry type="library" name="Maven: net.minidev:accessors-smart:1.1" level="project" />
     <orderEntry type="library" name="Maven: org.ow2.asm:asm:5.0.3" level="project" />
     <orderEntry type="library" name="Maven: info.cukes:cucumber-java:1.2.5" level="project" />
-    <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.18" level="project" />
+    <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.24" level="project" />
     <orderEntry type="library" name="Maven: de.siegmar:fastcsv:1.0.3" level="project" />
     <orderEntry type="library" name="Maven: info.picocli:picocli:3.0.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: net.masterthought:cucumber-reporting:3.8.0" level="project" />

@@ -1,0 +1,37 @@
+21:53:19.169 request:
+1 > POST http://dummy.restapiexample.com/api/v1/create
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 70
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: dummy.restapiexample.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"name":"hardwareandro-0.12169674936398578","salary":"123","age":"24"}
+
+21:53:19.868 response time in milliseconds: 697.96
+1 < 200
+1 < Accept-Ranges: bytes
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+1 < Age: 0
+1 < Cache-Control: no-store, no-cache, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: text/html; charset=UTF-8
+1 < Date: Wed, 23 Oct 2019 18:53:19 GMT
+1 < Expires: Thu, 19 Nov 1981 08:52:00 GMT
+1 < PageSpeed: off
+1 < Pragma: no-cache
+1 < Referrer-Policy: 
+1 < Response: 200
+1 < Server: nginx/1.16.0
+1 < Set-Cookie: [PHPSESSID=4c5d75309494fa06fda21e78a8ee0290; path=/, ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Wed, 23 Oct 2019 19:23:19 UTC, ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Wed, 23 Oct 2019 20:53:19 UTC, ezoab_133674=mod88; Path=/; Domain=restapiexample.com; Expires=Wed, 23 Oct 2019 20:53:19 UTC, active_template::133674=pub_site.1571856799; Path=/; Domain=restapiexample.com; Expires=Fri, 25 Oct 2019 18:53:19 UTC, ezCMPCCS=true; Path=/; Domain=restapiexample.com; Expires=Fri, 23 Oct 2020 18:53:19 GMT]
+1 < Vary: Accept-Encoding,X-APP-JSON
+1 < Via: 1.1 varnish (Varnish/6.0)
+1 < X-Ezoic-Cdn: Miss
+1 < X-Middleton-Response: 200
+1 < X-Sol: pub_site
+1 < X-VCache: Miss
+1 < X-Varnish: 60097006
+1 < X-shard: 100224194
+{"name":"hardwareandro-0.12169674936398578","salary":"123","age":"24","id":"4089"}
+

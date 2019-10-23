@@ -1,0 +1,62 @@
+<testsuite failures="0"
+           name="src/test/java/KarateApiTesting/KarateApi.feature"
+           skipped="0"
+           tests="3"
+           time="2.761813">
+   <testcase classname="src.test.java.KarateApiTesting.KarateApi"
+             name="Get all employee data"
+             time="1.326237">
+      <system-out>* url apiURL .............................................................. passed
+* def randomnumber = Math.random() ........................................ passed
+* def name = 'hardwareandro-'+randomnumber ................................ passed
+Given url apiURL .......................................................... passed
+And path 'employees' ...................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+   </testcase>
+   <testcase classname="src.test.java.KarateApiTesting.KarateApi"
+             name="Create new record in database"
+             time="0.711183">
+      <system-out>* url apiURL .............................................................. passed
+* def randomnumber = Math.random() ........................................ passed
+* def name = 'hardwareandro-'+randomnumber ................................ passed
+Given url apiURL .......................................................... passed
+And path 'employees' ...................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url apiURL .............................................................. passed
+* def randomnumber = Math.random() ........................................ passed
+* def name = 'hardwareandro-'+randomnumber ................................ passed
+Given url apiURL .......................................................... passed
+And path 'create' ......................................................... passed
+And request {"name":"#(name)","salary":"123","age":"24"} .................. passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed</system-out>
+   </testcase>
+   <testcase classname="src.test.java.KarateApiTesting.KarateApi"
+             name="Get a single employee data"
+             time="0.724393">
+      <system-out>* url apiURL .............................................................. passed
+* def randomnumber = Math.random() ........................................ passed
+* def name = 'hardwareandro-'+randomnumber ................................ passed
+Given url apiURL .......................................................... passed
+And path 'employees' ...................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* url apiURL .............................................................. passed
+* def randomnumber = Math.random() ........................................ passed
+* def name = 'hardwareandro-'+randomnumber ................................ passed
+Given url apiURL .......................................................... passed
+And path 'create' ......................................................... passed
+And request {"name":"#(name)","salary":"123","age":"24"} .................. passed
+When method post .......................................................... passed
+Then status 200 ........................................................... passed
+* url apiURL .............................................................. passed
+* def randomnumber = Math.random() ........................................ passed
+* def name = 'hardwareandro-'+randomnumber ................................ passed
+Given url apiURL .......................................................... passed
+And path 'employee/8386' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+   </testcase>
+</testsuite>

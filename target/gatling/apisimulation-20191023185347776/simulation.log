@@ -1,0 +1,21 @@
+RUN	APISimulation	apisimulation	1571856827776	 	3.0.2
+USER	custom	1	START	1571856827921	1571856827921
+USER	custom	2	START	1571856828516	1571856828516
+USER	custom	3	START	1571856829015	1571856829015
+USER	custom	4	START	1571856829516	1571856829516
+REQUEST	2		http://dummy.restapiexample.com/api/v1/employees	1571856828559	1571856832543	OK	 
+REQUEST	3		http://dummy.restapiexample.com/api/v1/employees	1571856829031	1571856833116	OK	 
+REQUEST	4		http://dummy.restapiexample.com/api/v1/employees	1571856829530	1571856833291	OK	 
+REQUEST	2		http://dummy.restapiexample.com/api/v1/create	1571856832848	1571856833575	OK	 
+REQUEST	1		http://dummy.restapiexample.com/api/v1/employees	1571856828559	1571856833290	OK	 
+REQUEST	3		http://dummy.restapiexample.com/api/v1/create	1571856833418	1571856834801	OK	 
+REQUEST	2		http://dummy.restapiexample.com/api/v1/employee/8386	1571856833584	1571856834811	OK	 
+USER	custom	2	END	1571856828516	1571856834812
+REQUEST	4		http://dummy.restapiexample.com/api/v1/create	1571856833580	1571856834812	OK	 
+REQUEST	1		http://dummy.restapiexample.com/api/v1/create	1571856833599	1571856834815	OK	 
+REQUEST	3		http://dummy.restapiexample.com/api/v1/employee/8386	1571856834810	1571856835550	OK	 
+USER	custom	3	END	1571856829015	1571856835551
+REQUEST	4		http://dummy.restapiexample.com/api/v1/employee/8386	1571856834822	1571856835552	OK	 
+USER	custom	4	END	1571856829516	1571856835560
+REQUEST	1		http://dummy.restapiexample.com/api/v1/employee/8386	1571856834824	1571856835588	OK	 
+USER	custom	1	END	1571856827921	1571856835589

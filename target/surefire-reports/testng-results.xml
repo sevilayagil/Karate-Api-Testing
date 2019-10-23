@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="KarateApiTesting.TestRunner" duration-ms="9490" started-at="2019-10-23T18:53:17Z" finished-at="2019-10-23T18:53:26Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="9490" started-at="2019-10-23T18:53:17Z" finished-at="2019-10-23T18:53:26Z">
+      <class name="KarateApiTesting.TestRunner">
+        <test-method status="PASS" signature="testParallel()[pri:0, instance:KarateApiTesting.TestRunner@4678c730]" name="testParallel" duration-ms="9480" started-at="2019-10-23T21:53:17Z" finished-at="2019-10-23T21:53:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParallel -->
+      </class> <!-- KarateApiTesting.TestRunner -->
+    </test> <!-- Command line test -->
+  </suite> <!-- KarateApiTesting.TestRunner -->
+</testng-results>

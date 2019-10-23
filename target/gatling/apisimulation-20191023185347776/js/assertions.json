@@ -1,0 +1,10 @@
+{
+  "simulation": "APISimulation",
+  "simulationId": "apisimulation",
+  "start": 1571856827776,
+  "description": "",
+  "scenarios": ["custom"],
+  "assertions": [
+
+  ]
+}
